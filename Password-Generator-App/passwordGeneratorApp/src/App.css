@@ -1,0 +1,256 @@
+/* Geral */
+@font-face {
+  font-family: Code Saver;
+  src: url(assets/CodeSaver-Regular.otf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Code Saver";
+  box-sizing: border-box;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #13121a;
+  color: #dedde5;
+}
+
+/* Titulo */
+.App h1 {
+  color: #757283;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+
+/* Mostrar a senha */
+.Resultado {
+  display: flex;
+  justify-content: space-between;
+  background-color: #24232b;
+  height: 5rem;
+  width: 30rem;
+  align-items: center;
+  font-size: 2.5rem;
+  padding: 0.5rem 1rem;
+  color: #54535b;
+  margin-bottom: 2rem;
+}
+
+#copyButton {
+  background-image: url("assets\greenIcon.png");
+  background-color: transparent;
+  border: none;
+  background-size: cover;
+  height: 2rem;
+  width: 2rem;
+  cursor: pointer;
+}
+
+#copyButton:hover {
+  background-image: url("assets\icon.png");
+}
+
+/* Opções da senha */
+.Configs {
+  height: 28rem;
+  width: 30rem;
+  background-color: #24232b;
+  padding: 1.5rem;
+}
+
+/* Barra de tamanho */
+#length {
+  display: flex;
+  flex-direction: column;
+}
+
+#length label {
+  margin-bottom: 1rem;
+  text-wrap: nowrap;
+}
+
+#valores {
+  display: flex;
+}
+
+#valores span {
+  color: #a4ffab;
+  margin-left: 17rem;
+}
+
+#slider {
+  appearance: none;
+  background: linear-gradient(
+    90deg,
+    rgb(19, 18, 26) 100%,
+    rgb(19, 18, 26) 100%
+  );
+}
+
+#length input::-webkit-slider-runnable-track {
+  height: 0.5rem;
+}
+
+#length input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: #e6e5ea;
+  border-radius: 50%;
+  margin-top: -8px;
+}
+#length input:hover::-webkit-slider-thumb {
+  background: #18161f;
+  border: 2px solid #a4ffab;
+  -webkit-appearance: none;
+}
+
+/* Opções de include */
+#checkBoxes {
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  justify-content: space-evenly;
+}
+
+#checkBoxes label {
+  position: relative;
+  vertical-align: middle;
+  margin-left: 1rem;
+}
+
+#checkBoxes input {
+  position: relative;
+  vertical-align: middle;
+  appearance: none;
+  border: 1px solid #dedde5;
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+#checkBoxes input:checked {
+  width: 1rem;
+  height: 1rem;
+  background-color: #a4ffab;
+}
+
+#checkBoxes input:checked:after {
+  content: "\2714";
+  font-size: 1rem;
+  font-weight: bold;
+  color: #13121a;
+  position: relative;
+  bottom: 3px;
+}
+
+/* Barra de força */
+#strength {
+  padding: 1rem;
+  background-color: #13121a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#strength h2 {
+  color: #54535b;
+  font-size: 1rem;
+}
+
+p {
+  color: white;
+}
+#strength p {
+  text-transform: uppercase;
+  line-height: 1.485rem;
+}
+
+.fs-2 {
+  font-size: 1.5rem;
+  line-height: 1.485rem;
+}
+
+.strengthlvl {
+  align-items: center;
+  display: flex;
+}
+
+.strengthlvl p {
+  margin-left: 5px;
+}
+.bars {
+  width: 10px;
+  height: 28px;
+  border: 2px solid white;
+  margin-left: 0.5rem;
+}
+
+.tooWeak {
+  background-color: red;
+  border: 2px solid red;
+}
+
+.weak {
+  background-color: orange;
+  border: 2px solid orange;
+}
+
+.medium {
+  background-color: yellow;
+  border: 2px solid yellow;
+}
+
+.strong {
+  background-color: #a4ffab;
+  border: 2px solid #a4ffab;
+}
+
+/* Botão de generate */
+.button {
+  width: 100%;
+  padding-top: 1.125rem;
+  padding-bottom: 1.125rem;
+  border: 2px solid #a4ffab;
+  background-color: #a4ffab;
+}
+
+.button:hover {
+  background-color: #18161f;
+  color: #a4ffab;
+  cursor: pointer;
+}
+
+.button svg {
+  margin-left: 1rem;
+}
+
+.button:hover path {
+  fill: #a4ffab;
+}
+.generateBtn {
+  margin-top: 30px;
+}
+#generateBtn {
+  text-transform: uppercase;
+  line-height: 1.485rem;
+  font-size: 1rem;
+}
+
+/* #checkBoxes input:checked:after {
+    content: '\2714';
+	font-size: 14px;
+	position: absolute;
+	top: 0px;
+	left: 3px;
+	color: #99a1a7;
+} */
