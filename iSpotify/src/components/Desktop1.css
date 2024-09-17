@@ -1,0 +1,205 @@
+/* Variáveis de cores */
+:root {
+  --azul: #17a6e4;
+  --verde: #3fe168;
+  --cinza: #555555;
+  --cinza2: #d9d9d9;
+}
+
+/* Estilos gerais de texto */
+h1 {
+  font-size: 2.8em;
+}
+
+/* Layout principal */
+.Display {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.SideBar {
+  height: 100vh;
+  width: 15vw;
+  background-color: black;
+}
+
+.Main {
+  height: 100vh;
+  width: 85vw;
+  background: linear-gradient(180deg, #555555 0%, black 85%);
+  padding: 2vw 3vw;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  color: white;
+}
+
+/* Informações da Playlist */
+.Infos {
+  margin-top: 19.9vh;
+  height: 21.8vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: end;
+}
+
+.Infos img {
+  height: 21.8vh;
+  width: 21.8vh;
+}
+
+.InfosTexto {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  height: 14.9vh;
+  margin-left: 2.9vw;
+  justify-content: space-around;
+  font-weight: bold;
+  color: white;
+}
+
+/* Botões de controlar a playlist */
+.Botões {
+  height: 6.34vh;
+  width: 13.5vw;
+  margin-top: 10vh;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#play {
+  height: 6.34vh;
+}
+
+#coração {
+  height: 5.07vh;
+}
+
+#download {
+  height: 3.51vh;
+}
+
+#pontos {
+  height: 0.78vh;
+}
+
+#relógio {
+  height: 3vh;
+}
+
+/* Músicas */
+.Playlist {
+  margin-top: 5vh;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+
+.Cabeçalho {
+  color: var(--cinza2);
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1vh;
+}
+
+#album {
+  margin-left: 30vh;
+}
+.Divisao {
+  margin-bottom: 2vh;
+}
+
+.MusicasPagina {
+  margin-top: 2vh;
+}
+
+/* Side Bar */
+
+.SideBar {
+  height: 100vh;
+  width: 15vw;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.SideBar h1 {
+  margin-top: 9.35vh;
+  background-color: black;
+}
+
+.Artistas,
+.MusicasCurtidas,
+.MinhaConta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.97vh;
+  background-color: black;
+}
+
+.Artistas img,
+.MinhaConta img {
+  height: 2.2vh;
+  width: 2.2vh;
+  margin-right: 0.6vw;
+}
+
+.MusicasCurtidas img {
+  height: 3.5vh;
+  width: 1.8vw;
+  margin-right: 0.6vw;
+  background-color: black;
+}
+
+.Logout {
+  background-color: black;
+}
+
+.Logout button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 0.7vw;
+  left: 0.7vw;
+  margin-top: 66vh;
+  border: 0;
+  background-color: black;
+}
+
+.Logout p {
+  font-size: 2.6vh;
+}
+.Logout img {
+  margin-right: 0.6vw;
+  height: 3vh;
+  width: 1.8vw;
+}
+
+.Logout button {
+  color: white;
+}
+
+.Artistas button,
+.MinhaConta button {
+  border: 0;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.Artistas button:hover,
+.MinhaConta button:hover,
+.MusicasCurtidas button:hover {
+  cursor: pointer;
+}
