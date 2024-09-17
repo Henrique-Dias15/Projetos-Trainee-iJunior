@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+body {
+    width: 1440px;
+    background-image: url(./interactive-card-details-form-main/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 53vh 100vh;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 100px;
+}
+
+.cardDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 300px;
+}
+
+#iconComplete {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+}
+
+#ty {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    border: #fff solid 1px;
+    margin-bottom: 15px;
+    color: hsl(278, 68%, 11%);
+}
+
+#desc {
+    margin-bottom: 40px;
+    color: hsl(279, 6%, 55%);
+}
+
+#continueButton {
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(278, 68%, 11%);
+    padding: 15px 150px 15px 150px;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.containerC {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 130px 0px 200px;
+}
+
+.card-front{
+    background-image: url(interactive-card-details-form-main/images/bg-card-front.png);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back {
+    background-image: url(interactive-card-details-form-main/images/bg-card-back.png);
+    margin: 50px 0px 0px 100px;
+}
+
+.card-back, .card-front{
+    display: flex;
+    width:447px;
+    height:245px;
+    color: white;
+}
+
+#cardnumber-text{
+    margin:140px 0px 0px 30px ;
+    letter-spacing: 2px;
+    font-size: 29px;
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 0px 30px;
+}
+
+#cvc-text{
+    margin: 110px 0px 0px 350px;
+    letter-spacing: 2px;
+}
+
+#name-text, #date-text{
+    letter-spacing: 2px;
+}

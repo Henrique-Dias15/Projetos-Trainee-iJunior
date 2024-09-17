@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+</head>
+<body>
+  <div class="main-container">
+    <img id='background' src="./images/bg-main-desktop.png" alt="">
+
+    <div class="card card-front">
+      <img src="./images/bg-card-front.png" alt="">
+      <img class="card-logo" src="./images/card-logo.svg" alt="">
+      <p class="card-number">0000 0000 0000 0000</p>
+      <p class="card-name">Jane Aplessed</p>
+      <p class="card-expdate">00/00</p>
+    </div>
+
+    <div class="card card-back">
+      <img src="./images/bg-card-back.png" alt="">
+      <p class="cvc">000</p>
+    </div>
+
+    <div class="form">
+      <p class="label-name">CARDHOLDER NAME</p>
+      <input maxlength="20" placeholder="e.g. Jane Aplessed" type="text" class="input-name">
+      <p class="error-name">Wrong format, only letters and spaces!</p>
+      
+      <p class="label-number">CARD NUMBER</p>
+      <input maxlength="16" placeholder="e.g. 0000 0000 0000 0000" type="text" class="input-number">
+      <p class="error-number">Wrong format, only numbers !</p>
+
+      <div class="date-cvc">
+        <div>
+          <p class="label-expdate">EXP. DATE(MM/YY)</p>
+          <div class="exp-date-inputs">
+            <input maxlength="2" placeholder="MM" type="text" class="input-exp-MM">
+            <input maxlength="2" placeholder="YY" type="text" class="input-exp-YY">
+          </div>
+          <p class="error-expdate">Wrong format, only numbers !</p>
+        </div>
+        
+        <div>
+          <p class="label-cvc">CVC</p>
+          <input maxlength="3" placeholder="e.g. 000" type="text" class="input-cvc">
+          <p class="error-cvc">Wrong format, only numbers !</p>
+        </div>
+      </div>
+      
+        <p class="error-general">Please, check your card details!</p>
+        <button class="button submit">Confirm</button>
+    </div>
+
+    <div class="success-message">
+      <img src="./images/icon-complete.svg" alt="">
+      <h1>THANK YOU!</h1>
+      <p>We've added your card details</p>
+      <button class="button continue">Continue</button>
+    </div>
+
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

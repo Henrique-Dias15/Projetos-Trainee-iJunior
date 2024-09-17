@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Space+Grotesk:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-weight: 500;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+
+body {
+    width: 1440px;
+    background-color: white;
+    background-image: url(/interactive-card-details-form-main/images/bg-main-desktop.png);
+    background-repeat: no-repeat;
+    background-size: 53vh 100vh;
+    display: flex;
+}
+
+.containerF {
+    height: 100vh;
+    width: 100vw;
+    padding: 50px;
+    position:relative;
+    justify-content:right;
+    margin-right: 100px;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+
+
+.confirm-button {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+}
+
+.confirm-button button {
+    border: none;
+    background-color: hsl(278, 68%, 11%);
+    padding: 10px 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 400px;
+    height: 50px;
+}
+
+.confirm-button button a {
+    letter-spacing: 1px;
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.input-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.input-box {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.input-box input {
+    padding: 15px;
+    border: 1px solid hsl(270, 3%, 87%);
+    border-radius: 10px;
+    width: 400px;
+}
+
+.input-box label {
+    font-size: 13px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.dates {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+.dates input[name="exp.dateY"] {
+    margin-left: 10px;
+}
+
+#name, #cardnumber, #date, #cvc {
+    font-size: 18px;
+    font-weight: 100;
+    color: hsl(270, 3%, 87%);
+}
+
+#dateM, #dateY {
+    width: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#dateY{
+    margin-left: 10px;
+}
+
+#cvc {
+    width: 200px;
+    padding-left: 20px;
+}
+
+.inputnumbers-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.containerC {
+    display: flex;
+    flex-direction: column;
+    margin: 100px 0px 0px 200px;
+}
+
+.card-front{
+    background-image: url(interactive-card-details-form-main/images/bg-card-front.png);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-back {
+    background-image: url(interactive-card-details-form-main/images/bg-card-back.png);
+    margin: 50px 0px 0px 100px;
+}
+
+.card-back, .card-front{
+    display: flex;
+    width:447px;
+    height:245px;
+    color: white;
+}
+
+#cardnumber-text{
+    margin:140px 0px 0px 30px ;
+    letter-spacing: 2px;
+    font-size: 29px;
+}
+
+.card-bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 30px 0px 30px;
+}
+
+#cvc-text{
+    margin: 110px 0px 0px 350px;
+    letter-spacing: 2px;
+}
+
+#name-text, #date-text{
+    letter-spacing: 2px;
+}
+
+#function{
+    border: none;
+}
+
+/* .alerta {
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    padding: 3px;
+   
+}
+
+
+#divMensagens1,  #divMensagens2 , #divMensagens3{
+    width: 250px;
+    max-height: 100px;
+    overflow: hidden;
+   text-justify: left;
+} */
+
+small{
+    color: hsl(0, 100%, 66%);
+    font-size: 12px;
+    padding: 3px;
+}
+
+/* Sucess and erro */
+.input-box.error input{
+    border-color: hsl(0, 100%, 66%);
+}
+
+.input-box.error small{
+    visibility: visible;
+}
+
+.input-box.sucess input{
+    border-color: green;
+}
+
+.containerM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    margin-left: 200px;
+}
+
+#iconComplete {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 40px;
+    margin-left: 150px;
+}
+
+#ty {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    border: #fff solid 1px;
+    margin-bottom: 15px;
+    color: hsl(278, 68%, 11%);
+}
+
+#desc {
+    margin-bottom: 40px;
+    margin-left: 80px;
+    color: hsl(279, 6%, 55%);
+}
+
+#continueButton {
+    text-decoration: none;
+    color: #fff;
+    background-color: hsl(278, 68%, 11%);
+    padding: 15px 150px 15px 150px;
+    border-radius: 10px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}

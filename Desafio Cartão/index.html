@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 2</title>
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="icon" type="image/png" sizes="32x32" href="interactive-card-details-form-main/images/favicon-32x32.png">
+    <script src="scripts.js" defer></script>
+</head>
+
+
+<body>
+    <div class="containerC">
+        <div class="card-front">
+            <p id="cardnumber-text">0000 0000 0000 0000</p>
+            <div class="card-bottom">
+                <p id="name-text">JANE APPLESSEED</p>
+                <p id="date-text">00/00</p>
+            </div>
+        </div>
+        
+        <div class="card-back">
+            <p id="cvc-text">000</p>
+        </div>
+    </div>
+
+    <div class="containerM" style="display: none;">
+        <img id="iconComplete" src="./interactive-card-details-form-main/images/icon-complete.svg" alt="Complete">
+        <h1 id="ty">Thank you!</h1>
+        <p id="desc">We've added your card details</p>
+        <a id="continueButton" href="index.html">Continue</a>
+    </div>
+
+    <div class="containerF" style="display: flex;"> <!--  Formulário geral -->
+        <div class="form">
+            
+            <div class="input-group"> 
+                <form action="#" id="frmCartao"> <!-- Divisão dos formulários  -->
+                    <div class="input-box "> <!-- Armazena Nome -->
+                        <label for="name">cardholder name</label> 
+                        <input id="name" type="text" name="cardholder" placeholder="e.g. Jane Appleseed" oninput="changeCardHolderText()"> 
+                        <small id="name-mensage" style="display: none;">Cant Be Blank</small>
+                    </div>
+                  
+                    <div class="input-box"> <!-- Armazena Número -->
+                        <label for="cardnumber">card number</label> 
+                        <input id="cardnumber" type="number" name="cardnumber" placeholder="e.g. 1234 5678 9123 0000"  oninput="changeCardNumber()" maxlength="16"  >
+                        <small id="cardnumber-mensage" style="display: none;">Cant Be Blank</small> 
+                    </div>
+                    <div class="inputnumbers-group"> 
+                        <div class="input-box"> <!-- Armazena Mês e Ano -->
+                            <label for="date">Exp. date (MM/YY)</label>
+                            <div class="dates">
+                                <input id="dateM" type="number" name="dateM" placeholder="MM"  oninput="changeDate()" maxlength="2" > 
+                                <input id="dateY" type="number" name="dateY" placeholder="YY"  oninput="changeDate()" maxlength="2" > 
+                            </div>
+                            <div id="smalldate">
+                                <small id="date-mensage" style="display: none;">Cant Be Blank</small>
+                            </div>
+                        </div>
+                       
+                        <div class="input-box"> <!-- Armazena Código de Segurança -->
+                            <label for="cvc">CVC</label>
+                            <input id="cvc" type="number" name="cvc" placeholder="e.g. 123"  oninput="changeCvc()" maxlength="3"> 
+                            <small id="cvc-mensage" style="display: none;">Cant Be Blank</small>
+                        </div>
+                    </div>
+                   
+            </div>
+            <div class="confirm-button"> <!-- Botão de confirmação -->
+                <button id="btnConf" onclick="checkInputs(); return false"><a href="#">Confirm</a></button>
+            </div>
+            </form>
+        </div>
+    </div>
+
+
+</body>
+</html>
