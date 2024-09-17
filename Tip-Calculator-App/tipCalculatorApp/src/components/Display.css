@@ -1,0 +1,76 @@
+/* Geral */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  box-sizing: border-box;
+}
+
+.Display {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background: hsl(185, 41%, 84%);
+}
+
+/* Principal */
+.Main {
+  height: 30rem;
+  width: 60rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 2rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+h1 {
+  color: hsl(183, 100%, 15%);
+  letter-spacing: 0.5rem;
+  margin-bottom: 3rem;
+  font-size: 1.5rem;
+}
+
+/* Area de inputs */
+.Inputs {
+  height: 26rem;
+  width: 27rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Resultados */
+.Resultados {
+  height: 26rem;
+  width: 27rem;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Botão de Reset */
+.reset button {
+  appearance: none;
+  height: 3rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.5rem;
+  background-color: hsl(183, 79%, 24%);
+  color: hsl(184, 90%, 20%);
+  font-size: 1.5rem;
+}
+
+.reset button:hover {
+  background-color: hsl(173, 61%, 77%);
+  cursor: pointer;
+}

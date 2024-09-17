@@ -1,0 +1,19 @@
+.main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1rem;
+  color: hsl(0, 0%, 100%);
+}
+
+#text p {
+  color: hsl(184, 14%, 56%);
+}
+
+#value p {
+  font-size: 3rem;
+  color: hsl(172, 67%, 45%);
+}

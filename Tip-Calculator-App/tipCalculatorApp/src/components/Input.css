@@ -1,0 +1,50 @@
+.inputBill {
+  display: flex;
+  flex-direction: column;
+  height: 5rem;
+}
+
+.inputBillTexts {
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputBillTexts p {
+  color: red;
+}
+
+.inputBill label {
+  color: hsl(184, 14%, 56%);
+  margin-bottom: 0.5rem;
+}
+
+.inputBill input {
+  background-image: url(assets\icon-dollar.svg);
+  background-position: 5%;
+  background-repeat: no-repeat;
+  appearance: none;
+  border: none;
+  height: 3rem;
+  background-color: hsl(189, 41%, 97%);
+  font-size: 2rem;
+  padding: 0 1rem;
+  text-align: right;
+  border-radius: 3px;
+  color: hsl(181, 87%, 12%);
+}
+
+.inputBill input::placeholder {
+  color: hsl(180, 14%, 68%);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:hover,
+input:focus {
+  cursor: pointer;
+  outline: 2px solid hsl(173, 61%, 77%);
+}

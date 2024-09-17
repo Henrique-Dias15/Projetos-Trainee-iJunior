@@ -1,0 +1,49 @@
+.inputTip p {
+  color: hsl(184, 14%, 56%);
+}
+
+.buttons {
+  height: 7rem;
+  margin-top: 0.5rem;
+  display: grid;
+  grid-template-columns: 8rem 8rem 8rem;
+  grid-template-rows: 3rem 3rem 3rem;
+  gap: 1rem 1rem;
+}
+
+.buttons input {
+  background-color: hsl(183, 100%, 15%);
+  border: none;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 0.5rem;
+}
+
+.buttons input:hover {
+  background-color: hsl(173, 61%, 77%);
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+}
+
+#tipCustom {
+  border: none;
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+  text-align: center;
+}
+
+#tipCustom::placeholder {
+  color: hsl(184, 14%, 56%);
+}
+
+#tipCustom:hover,
+#tipCustom:focus {
+  outline: 2px solid hsl(173, 61%, 77%);
+  cursor: pointer;
+}
+
+#tipCustom::-webkit-inner-spin-button,
+#tipCustom::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
