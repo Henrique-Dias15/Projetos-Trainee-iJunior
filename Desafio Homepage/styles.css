@@ -1,0 +1,173 @@
+/*Geral*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+
+body {
+    padding: 50px 160px 0px 160px;
+    overflow-y: auto;
+    overflow-x: auto;
+}
+
+/*Header*/
+
+.header-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo-container {
+    width: 50%;
+}
+
+.navigation-menu {
+    padding-top: 20px;
+    width: 50%;
+    text-align: right;
+}
+
+.navigation-menu a {
+    color: #5d5f79;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+.navigation-menu a:hover {
+    color: #e9ab53;
+}
+
+/*Main*/
+
+.main-content__image img {
+    width: 730px;
+    height: 300px;
+}
+
+.main-content {
+    margin-top: 30px;
+    display: flex;
+}
+
+.main-content__text {
+    margin-top: 20px;
+    display: flex;
+}
+
+.main-content__text h1 {
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.main-content__text p {
+    margin-left: 50px;
+    line-height: 1.5;
+}
+
+.main-content__text p button {
+    width: 188px;
+    height: 48px;
+    color: #fff;
+    background-color: #f15e50;
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    border: none;
+}
+
+.main-content__text p button:hover {
+    background-color: #000;
+    cursor: pointer;
+}
+
+/*Side*/
+
+.sidebar {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #00001a;
+    width: 350px;
+    height: 510px;
+    margin-left: 30px;
+    padding: 30px 20px;
+}
+
+.sidebar h1 {
+    font-weight: bold;
+    font-size: 40px;
+    color: #e9ab53;
+    margin-bottom: 20px;
+}
+
+.sidebar div {
+    width: 100%;
+    margin-bottom: 28px;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 23px;
+    color: #fff;
+}
+
+.sidebar a:hover {
+    color: #e9ab53;
+}
+
+.sidebar p {
+    margin-top: 10px;
+    color: #5d5f79;
+}
+
+.sidebar hr {
+    margin-top: 28px;
+}
+
+/*Baixo*/
+
+.lower-section {
+    margin-top: 20px;
+    columns: 3;
+}
+
+.lower-section img {
+    width: 100px;
+    height: 130px;
+}
+
+.lower-section div {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.lower-section span {
+    height: 130px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.lower-section h1 {
+    color: #5d5f79;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.lower-section a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.lower-section a:hover {
+    color: #f15e50;
+}
+
+.lower-section p {
+    color: #5d5f79;
+}
